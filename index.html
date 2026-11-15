@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud Cleaner</title>
+<meta name="description" content="Fais de la place dans iCloud Drive, Google Drive et OneDrive depuis ton Mac, sans risque : tout reste récupérable.">
+<meta property="og:title" content="Cloud Cleaner">
+<meta property="og:description" content="Fais de la place dans iCloud Drive, Google Drive et OneDrive, sans risque.">
+<meta property="og:type" content="website">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f4f3f0; --surface: #fcfcfb; --border: #dddbd4;
+  --text: #0b0b0b; --text-2: #52514e; --muted: #67665f;
+  --accent: #1c5cab; --good: #08800a;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #111110; --surface: #1a1a19; --border: #353532; --text: #f0efec; --text-2: #c3c2b7;
+          --muted: #8f8e86; --accent: #3987e5; --good: #2fbf2f; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 48px 20px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header svg { color: var(--accent); flex: none; }
+h1 { font-size: 34px; margin: 0; letter-spacing: -.02em; }
+.tag { color: var(--text-2); margin: 2px 0 0; }
+h2 { font-size: 20px; margin: 40px 0 12px; }
+.hero { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 26px; }
+.hero p { margin: 0 0 18px; font-size: 18px; }
+.btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+  padding: 13px 24px; border-radius: 10px; }
+.btn:hover { filter: brightness(1.1); }
+.meta { color: var(--muted); font-size: 14px; margin-top: 10px; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.step { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.step b { display: block; margin-bottom: 4px; }
+.step span { color: var(--text-2); font-size: 15px; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+.muted { color: var(--muted); }
+code { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; font-size: 14px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+@media (max-width: 520px) { h1 { font-size: 28px; } .hero { padding: 20px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 10.5a3.75 3.75 0 0 1-.5 7.5z"/><path d="m9.5 14 2 2 3.5-4"/></svg>
+    <div><h1>Cloud Cleaner</h1><p class="tag">iCloud Drive · Google Drive · OneDrive</p></div>
+  </header>
+
+  <section class="hero">
+    <p>Fais de la place dans tes clouds depuis ton Mac, sans risque : rien n'est effacé, tout se remet en place en un clic.</p>
+    <a class="btn" href="Cloud-Cleaner-Mac.zip" download>Télécharger pour Mac</a>
+    <div class="meta">Version 2026.11.15.1819 · 15/11/2026 · 56 Ko · Mac Intel et Apple, macOS 11 ou plus récent</div>
+  </section>
+
+  <h2>En trois gestes</h2>
+  <div class="steps">
+    <div class="step"><b>1. Analyser</b><span>Cloud Cleaner regarde les noms, tailles et dates. Rien n'est téléchargé, rien ne quitte ton Mac.</span></div>
+    <div class="step"><b>2. Voir</b><span>« Je peux libérer X Go sans risque » : fichiers techniques, programmes d'installation, doublons exacts, dossiers vides.</span></div>
+    <div class="step"><b>3. Nettoyer</b><span>Tout part dans la corbeille de Cloud Cleaner. « Tout remettre comme avant » annule.</span></div>
+  </div>
+
+  <h2>Installer</h2>
+  <ol>
+    <li>Télécharge, puis double-clique sur le fichier zip.</li>
+    <li>Glisse <b>Cloud Cleaner</b> dans le dossier Applications.</li>
+    <li>La première fois : clic droit sur l'app › <b>Ouvrir</b> (elle n'est pas distribuée par l'App Store).</li>
+  </ol>
+  <p class="muted">Python 3 est nécessaire : s'il manque, l'app indique la commande à taper.</p>
+
+  <h2>Mises à jour automatiques</h2>
+  <p>À chaque lancement, Cloud Cleaner vérifie s'il existe une nouvelle version, la télécharge et l'installe au lancement suivant. Chaque mise à jour est <b>signée</b> : un paquet modifié ou non signé est refusé. Si une nouvelle version ne démarre pas, l'app revient toute seule à la précédente.</p>
+
+  <h2>Ce qui protège tes fichiers</h2>
+  <ul>
+    <li>Seule « Vider la corbeille » efface définitivement, après confirmation.</li>
+    <li>Un journal note chaque déplacement avant de le faire : même une coupure ne fait perdre aucun fichier.</li>
+    <li>Jamais touchés : documents Google (Docs, Sheets…), Drives partagés, données d'applications, dossiers Bureau et Documents synchronisés.</li>
+    <li>Tout ce qui a changé depuis l'analyse est laissé en place.</li>
+  </ul>
+
+  <h2>Versions</h2>
+  <ul>
+<li><b>2026.11.15.1819</b> <span class="muted">· 2026-11-15</span> — Première version publiée : nettoyage sans risque, tout remettre comme avant, mises à jour automatiques signées</li>
+  </ul>
+
+  <footer>Cloud Cleaner fonctionne entièrement sur ton Mac : aucun compte, aucun serveur, aucune donnée envoyée.</footer>
+</main>
+</body>
+</html>
